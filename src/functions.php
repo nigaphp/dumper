@@ -5,10 +5,14 @@
  * (c) Abass Ben Cheik <abass@todaysdev.com>
  */
  
-namespace Nigatedev\Filesystem\Exceptions;
-
-namespace Nigatedev\Dumper;
-
-function dump($data) {
- return (new Dumper())->dumper($data);
-}
+ use Nigatedev\Dumper\Dumper;
+ 
+ function dump($data)
+ {
+   echo (new Dumper())->dumper($data);
+ }
+ 
+ function dd($data)
+ {
+   die((new dumper())->dumper($data));
+ }

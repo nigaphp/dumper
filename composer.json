@@ -6,7 +6,10 @@
     "autoload": {
         "psr-4": {
             "Nigatedev\\Dumper\\": "src/"
-        }
+        },
+        "files": [
+            "src/functions.php"
+        ]
     },
     "authors": [
         {
@@ -16,10 +19,5 @@
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "require": {},
-    "autoload-dev": {
-        "files": [
-            "src/functions.php"
-        ]
-    }
+    "require": {}
 }
