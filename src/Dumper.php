@@ -23,7 +23,7 @@ namespace Nigatedev\Dumper;
      */
     public function dumper($data)
     {
-     return $this->pre($data);
+     return  $this->pre($data);
     }
    
  }

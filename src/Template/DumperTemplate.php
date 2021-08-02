@@ -30,7 +30,7 @@ class DumperTemplate {
     $dataType = gettype($data);
     switch ($dataType) {
       case 'string':
-        return $this->dataTypeIs(["Type" => "String", "Value" => $data]);
+        return $this->dataTypeIs(["Type" => "String", "Value" => $data, "Length" => strlen($data)]);
         break;
       case 'double':
         return $this->dataTypeIs(["Type" => "Float", "Value" => $data]);
@@ -79,7 +79,7 @@ class DumperTemplate {
         }
       } else {
         echo "
-         <i style='padding:0;background:#161a1a;'>
+         <i style='padding:1px;background:#161a1a;'>
         <span style='color:#fff;'>
           <span style='color:#10ae00;'>
             $key
@@ -91,6 +91,6 @@ class DumperTemplate {
 
       }
     }
-
+      echo "<br />";
   }
 }
