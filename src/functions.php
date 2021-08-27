@@ -8,8 +8,9 @@
  use Nigatedev\Dumper\Dumper;
  
  /**
-  * @param mixed $data
+  * dumper
   *
+  * @param mixed $data
   * @return void
   */
 function dump($data)
@@ -18,8 +19,9 @@ function dump($data)
 }
  
  /**
-  * @param mixed $data
+  * dump and die
   *
+  * @param mixed $data
   * @return void
   */
 function dd($data)

@@ -18,12 +18,12 @@ class Dumper extends DumperTemplate
 {
    
     /**
-     * @params mixed $dumper
+     * @params $dumper can be any type of data
      *
-     * @return string
+     * @return dump values
      */
-    public function dumper(mixed $data)
+    public function dumper($data)
     {
-        return  $this->pre($data);
+        return $this->pre($data);
     }
 }
