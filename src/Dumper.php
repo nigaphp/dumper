@@ -27,3 +27,4 @@ class Dumper extends DumperTemplate
         return $this->pre($data);
     }
 }
+
