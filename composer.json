@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Nigatedev\\Dumper\\": ""
+            "Nigatedev\\Framework\\Dumper\\": ""
         },
         "files": [
             "src/functions.php"
